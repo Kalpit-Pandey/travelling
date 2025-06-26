@@ -1,0 +1,165 @@
+/* src/styles/components/specialOffers.css */
+.special {
+  padding: 4rem 0;
+}
+
+.section-content {
+  position: relative;
+}
+
+/* Card styles */
+.offers-card {
+  height: 320px;
+  width: 330px;
+}
+
+.offers-card-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  height: inherit;
+}
+
+.offers-card-top {
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-card-top img {
+  height: inherit;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 250ms ease;
+}
+
+.offers-card:hover .offers-card-image {
+  transform: scale(1.051);
+}
+
+.offers-card-bottom {
+  height: 100px;
+  background-color: var(--primary-light-color);
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offers-card-title {
+  font-weight: bold;
+  color: var(--secondary-text);
+}
+
+.offers-card-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary-text);
+}
+
+.from-price {
+  display: flex;
+  align-items: center;
+}
+
+.from-price p {
+  font-size: 0.9rem;
+}
+
+.from-price .amount {
+  margin-left: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.details-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1.6rem;
+  border-radius: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Navigation buttons */
+.offers-toggle {
+  position: absolute;
+  z-index: 111;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+  margin: 0 0.2rem;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.197);
+  transition: all 0.3s ease;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button-prev {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.toggle-button-next {
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+}
+
+.toggle-button span {
+  font-size: 1.8rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Swiper overrides */
+.swiper-container {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* Dark mode styles */
+.dark-mode .offers-card-bottom {
+  background-color: var(--card-bg);
+}
+
+.dark-mode .offers-card-title,
+.dark-mode .offers-card-pricing {
+  color: var(--text-color);
+}
+
+/* Responsive styles */
+@media (max-width: 481px) {
+  .offers-toggle {
+    top: 11rem;
+  }
+}

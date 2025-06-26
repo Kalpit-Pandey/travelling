@@ -1,0 +1,60 @@
+.gallery-container {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-bottom: 6rem;
+}
+
+.gallery-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.gallery-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gallery-img img {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover img {
+  transform: scale(1.05);
+}
+
+/* Hide certain images on smaller screens */
+.gal-img-c,
+.gal-img-e {
+  display: none;
+}
+
+/* Responsive design */
+@media only screen and (min-width: 900px) {
+  .gal-img-c {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .gal-img-e {
+    display: block;
+  }
+}
+
+/* Dark mode styles */
+.dark-mode .gallery-container {
+  background-color: var(--card-bg);
+}

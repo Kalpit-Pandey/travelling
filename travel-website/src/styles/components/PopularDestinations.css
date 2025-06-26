@@ -1,0 +1,125 @@
+.popular .container {
+  position: relative;
+}
+
+.toggle-buttons {
+  position: absolute;
+  z-index: 111;
+  top: 50%; /* Changed from 40% to 50% */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  transform: translateY(-50%); /* Added this to perfectly center */
+  padding: 0 1rem; /* Add some padding from edges */
+}
+
+.toggle-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+  margin: 0 0.2rem;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.197);
+  border: none;
+  pointer-events: auto;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button-prev {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.toggle-button-next {
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+}
+
+.toggle-button span {
+  font-size: 1.8rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular-card {
+  position: relative;
+  border-radius: 40px;
+  margin: 1rem 0 2rem 0;
+  transition: box-shadow ease 300ms, transform ease 300ms;
+  overflow: hidden;
+}
+
+.popular-card:hover {
+  transform: scale(1.005);
+  box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.pc__img-cont {
+  height: 470px;
+  border-radius: 40px;
+  width: 310px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.popular-card-img {
+  height: inherit;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pc__content {
+  position: absolute;
+  bottom: -0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(#8f3e0888, #bb641d9f);
+  height: 20%;
+  color: var(--primary-text);
+  transition: height ease 250ms;
+}
+
+.popular-card:hover .pc__content {
+  background: linear-gradient(#8f3e08d0, #bb641dd0);
+  height: 35%;
+}
+
+.pc__title {
+  font-size: 1.8rem;
+}
+
+.pc__desc {
+  color: var(--primary-text);
+}
+
+@media (max-width: 481px) {
+  .toggle-buttons {
+    top: 11rem;
+  }
+  
+  .pc__img-cont {
+    height: 400px;
+    width: 280px;
+  }
+}
+
+/* Dark mode styles */
+.dark-mode .toggle-button-prev {
+  background-color: var(--nav-bg);
+  border-color: var(--primary-color);
+}

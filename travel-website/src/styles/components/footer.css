@@ -1,0 +1,165 @@
+.footer-section {
+  background-color: var(--secondary-color);
+}
+
+.footer-section .container {
+  height: 250px;
+  position: relative;
+}
+
+/* Newsletter styles */
+.newsletter {
+  position: absolute;
+  top: -2.5rem;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-wrapper {
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
+  width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0.2rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.newsletter-title {
+  font-size: 1.4rem;
+}
+
+.email-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.emailLabel {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.emailInputField {
+  border: none;
+  border-radius: 1.2rem;
+  background-color: var(--primary-light-color);
+  padding: 0.4rem 0.4rem;
+  outline: none;
+  text-align: center;
+}
+
+.subscribe-btn {
+  margin-top: 0.4rem;
+  padding: 0.3rem 1rem;
+  border-radius: 1.2rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+/* Footer content styles */
+footer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-links-header {
+  margin-bottom: 0.51rem;
+  color: var(--primary-text);
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links img {
+  height: 2.5rem;
+  margin-right: 0.41rem;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
+}
+
+.contact-items {
+  color: var(--primary-text);
+}
+
+.contact-item a {
+  color: var(--primary-text);
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive styles */
+@media only screen and (min-width: 700px) {
+  .newsletter-wrapper {
+    width: 700px;
+  }
+  
+  .email-subscription {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .subscribe-btn {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  
+  .emailLabel {
+    text-align: left;
+    display: inline-block;
+    margin: 0 0 0.51rem 0.4rem;
+  }
+  
+  .emailInputField {
+    text-align: left;
+  }
+  
+  .input-group {
+    align-items: flex-start;
+    margin-right: 1rem;
+  }
+}
+
+/* Dark mode styles */
+.dark-mode .newsletter-wrapper {
+  background-color: var(--card-bg);
+}
+
+.dark-mode .emailLabel {
+  color: var(--text-color);
+}
+
+.dark-mode .emailInputField {
+  background-color: var(--nav-bg);
+  color: var(--text-color);
+}

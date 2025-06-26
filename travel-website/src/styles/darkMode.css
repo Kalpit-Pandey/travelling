@@ -1,0 +1,107 @@
+/* src/styles/darkMode.css */
+.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --nav-bg: #2d2d2d;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+  --hover-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar Dark Mode */
+.dark-mode .header-active {
+  background-color: var(--nav-bg);
+}
+
+.dark-mode .header-active .logo p,
+.dark-mode .header-active .nav-item a {
+  color: var(--text-color);
+}
+
+.dark-mode .header-active .nav-item a:hover {
+  background-color: var(--hover-bg);
+}
+
+/* Popular Destinations Dark Mode */
+.dark-mode .section-title {
+  color: var(--text-color);
+}
+
+.dark-mode .section-desc {
+  color: var(--text-color);
+}
+
+.dark-mode .toggle-button-prev {
+  background-color: var(--nav-bg);
+  border-color: var(--primary-color);
+}
+
+/* Special Offers Dark Mode */
+.dark-mode .offers-card-bottom {
+  background-color: var(--card-bg);
+}
+
+.dark-mode .offers-card-title,
+.dark-mode .offers-card-pricing {
+  color: var(--text-color);
+}
+
+/* Blog Section Dark Mode */
+.dark-mode .blogs-article {
+  color: var(--text-color);
+}
+
+.dark-mode .blogs-left-articles,
+.dark-mode .blogs-right-articles {
+  color: var(--text-color);
+}
+
+.dark-mode .right-article-image {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Gallery Dark Mode */
+.dark-mode .gallery-container {
+  background-color: var(--card-bg);
+}
+
+/* Footer Dark Mode */
+.dark-mode .newsletter-wrapper {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.dark-mode .newsletter-title {
+  color: var(--text-color);
+}
+
+.dark-mode .emailLabel {
+  color: var(--text-color);
+}
+
+.dark-mode .emailInputField {
+  background-color: var(--nav-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.dark-mode .footer-section {
+  background-color: var(--nav-bg);
+}
+
+/* Body background in dark mode */
+.dark-mode body,
+.dark-mode .app {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Additional hover effects for dark mode */
+.dark-mode .read-more:hover {
+  color: var(--primary-light-color);
+}
+
+.dark-mode .details-btn:hover {
+  background-color: var(--primary-light-color);
+  color: var(--primary-color);
+}
